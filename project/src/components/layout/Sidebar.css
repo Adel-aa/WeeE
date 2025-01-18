@@ -1,0 +1,17 @@
+      /* Increase the font size of sidebar items */
+.sidebar-item {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Add shadow to the active tab */
+  .sidebar-item.active {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0; /* Optional: Change background color for active tab */
+  }
+  
+  /* Optional: Add hover effect */
+  .sidebar-item:hover {
+      background-color: #e0e0e0;
+  }

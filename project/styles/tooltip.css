@@ -1,0 +1,30 @@
+.tooltip {
+    position: absolute;
+    /* Adjust the positioning to be under the icon */
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    /* Ensure the tooltip content is fully visible */
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    /* Add other necessary styles */
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 240px; /* Adjust max-width to fit within the card */
+    word-wrap: break-word; /* Ensure long text wraps correctly */
+}
+
+/* Ensure the tooltip appears on the correct icon */
+.icon:hover .tooltip {
+    display: block;
+}
+
+/* Hide the tooltip by default */
+.tooltip {
+    display: none;
+}
